@@ -3,4 +3,4 @@ project(cpp)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(cpp part1/type.cpp)
+add_executable(cpp part1/bool.cpp)

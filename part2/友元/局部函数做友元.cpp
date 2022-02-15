@@ -1,7 +1,23 @@
 #include <iostream>
 using namespace std;
 
-class Demo;
+class Person;
+
+class Demo
+{
+public:
+    Person *p;
+    Demo()
+    {
+        p = new Person();
+    }
+
+    void showInfo()
+    {
+        cout << p->name << endl;
+        // cout << p->age << endl;
+    }
+};
 
 class Person
 {
@@ -18,26 +34,6 @@ public:
 private:
     int age;
 };
-
-class Demo
-{
-public:
-    Person *p;
-    Demo()
-    {
-        p = new Person();
-    }
-
-    void showInfo()
-    {
-    }
-};
-
-void Demo::showInfo()
-{
-    cout << p->name << endl;
-    cout << p->age << endl;
-}
 
 int main()
 {
